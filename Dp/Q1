@@ -1,1 +1,30 @@
+//509.Fibonacci Number
 
+class Solution {
+public:
+    int solve(int n, vector<int>& dp) {
+        if (n <= 1) {
+            return n;
+        }
+        if (dp[n] != -1) { // checkin weather it is equal to -1
+            return dp[n];
+        }
+        return dp[n] = solve(n - 1, dp) + solve(n - 2, dp);
+    }
+
+    int fib(int n) {
+
+        if (n <= 1) // Base case
+        {
+            return n;
+        }
+
+        // used dp vector for memorization in one dimension as only one variable
+        // taking n+1 maximum size and initializing with -1.
+        // using memorization to abvoid the calculation of repeatiing sub-problem.
+        
+        vector<int> dp(n + 1, -1);
+
+        return solve(n, dp);
+    }
+};
