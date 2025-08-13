@@ -22,6 +22,8 @@ public:
         // used dp vector for memorization in one dimension as only one variable
         // taking n+1 maximum size and initializing with -1.
         // using memorization to abvoid the calculation of repeatiing sub-problem.
+        // By recursion time complexity is exponential 2^n which is not good for large test case so we use memorization.
+
         
         vector<int> dp(n + 1, -1);
 
