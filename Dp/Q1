@@ -1,3 +1,12 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Feature         | Top-Down (Memoization)                | Bottom-Up (Tabulation)                 |
+| --------------- | ------------------------------------- | -------------------------------------- |
+| Approach        | Recursion + cache                     | Iterative + table                      |
+| Execution Order | On-demand (depends on recursion path) | Fixed order (predefined loop sequence) |
+| Space Usage     | O(n) for memo + recursion stack       | O(n) for table (stack not needed)      |
+| Ease of Writing | Often more intuitive                  | Requires dependency planning           |
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 //509.Fibonacci Number
 
 class Solution {
@@ -58,6 +67,7 @@ return dp[n];
         
     }
 };
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
