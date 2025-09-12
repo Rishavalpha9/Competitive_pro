@@ -1,5 +1,5 @@
 /************************************************************ C++ ***************************************************/
-/*Space Complexity: O(L)
+Space Complexity: O(L)
 Time Complexity: O(M * N * 3^L)
 Space Complexity is because of recursion - to store function stack context.
 Time Complexity - from every block we go in three adjacent blocks (avoiding the direction we came from). 
